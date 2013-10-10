@@ -1,4 +1,4 @@
-# LISTS
+# ARRAYS
 # -------------
 #
 # Change this array to match the people at your table
@@ -23,26 +23,34 @@ puts number_of_people
 # CHALLENGE #4: Can you display a random name from the list?
 
 
+
 # CHALLENGE #5: Can you add a new name to the end of the list,
 # and then prove that it worked?
+
+
+
+# CHALLENGE #6: Can you sort the list into alphabetical order?
 
 
 
 # HASHES
 # -------------
 
-# Feel free to modify the data :-)
+# Feel free to modify this data :-)
 favorites = { "color" => "Purple", "number" => 3, "fruit" => "cookies" }
 
 # CHALLENGE #6: Can you display your favorite color?
 
 
-# CHALLENGE #6: Can you add the title of your favorite song?
+# CHALLENGE #6: Can you modify the hash to keep track of your favorite song?
+
+
 
 # CHALLENGE #7: Can you add a list of your friends' names?
-# For example,
+# For example, thise code:
+#
 #    puts favorites["friends"]
 #
-# should return the list of the names of your friends.
+# should display the list of the names of your friends.
 
 
