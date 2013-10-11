@@ -25,8 +25,11 @@
 
 # Your code goes here:
 
-
-
+placeholder = 0
+5.times do
+  puts "howdy #{placeholder}"
+  placeholder = placeholder + 1
+end
 
 
 
