@@ -117,8 +117,8 @@ names_hash = { "hoodie" => "Neal", "snuggie" => "Mike", "blackhawks" => "Jeff", 
 
 # Now I don't need to remember the order; I just need to know what I'm looking for.
 
-puts "Key hoodie: #{names_hash["hoodie"]}"
-puts "Key blackhawks: #{names_hash["blackhawks"]}"
+# puts "Key hoodie: #{names_hash["hoodie"]}"
+# puts "Key blackhawks: #{names_hash["blackhawks"]}"
 
 # Cool, huh? Now I can look things up in my list without needing to know the order.
 # For my fellow Excel junkies, it's kind of like a VLOOKUP.
@@ -167,9 +167,9 @@ puts "Key blackhawks: #{names_hash["blackhawks"]}"
 
 # The Array#each_index method will count the length of the array for you, so you don't have to mess around with Array#length and Fixnum#times.
 
-names.each_index do |index|
-  puts "*** #{names[index]} ***"
-end
+# names.each_index do |index|
+#   puts "*** #{names[index]} ***"
+# end
 
 # But there's a way to clean it up even more. We're doing all this work to get cell numbers just so that we can use them to index into the array just so that we can pull out the thing that we want to do something interesting with.
 
@@ -177,9 +177,9 @@ end
 
 # The .each method will count the length of the array for you, AND it will give you back each element without you needing to manually access the array.
 
-names.each do |name|
-  puts "*** #{name} ***"
-end
+# names.each do |name|
+#   puts "*** #{name} ***"
+# end
 
 # Notice I named the block variable descriptively; before it made sense to call it 'index' because each time through, it was the index that got assigned to it (because that's what .each_index hands back each time through). This time I get the actual object in the cell (because that's what .each hands back each time through), so I called it 'name'.
 
@@ -274,15 +274,15 @@ params = {
 
 # Encapsulate your code in a method if you haven't already. The method should accept a cart array, a tax hash, and a customer hash as arguments.
 
-def print_total()
+# def  # call it print_total()
   # Your code goes here.
-end
+# end
 
 
 
 # Now change the quantity of iMacs to 3 and run your method.
 
-print_total(shopping_cart, sales_tax, params)
+# print_total(shopping_cart, sales_tax, params)
 
 # Notice the differences. What had to match with what, now that we moved the logic into a method?
 
