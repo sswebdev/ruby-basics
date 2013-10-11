@@ -274,7 +274,7 @@ params = {
 
 # Encapsulate your code in a method if you haven't already. The method should accept a cart array, a tax hash, and a customer hash as arguments.
 
-def # call it print_total()
+def print_total()
   # Your code goes here.
 end
 
