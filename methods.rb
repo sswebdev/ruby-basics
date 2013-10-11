@@ -3,12 +3,11 @@
 #
 # Here's an example of a Ruby method:
 #
-def roll_dice(upper_limit = 6)
+def roll_dice(upper_limit)
   number = rand(1..upper_limit)
   puts "You rolled a " + number.to_s
 end
 
-roll_dice
 roll_dice 6
 roll_dice 8
 roll_dice 12
@@ -44,9 +43,5 @@ line = "-" * 36
 puts line
 puts "|" + vince.center(line.length-2) + "|"
 puts line
-
-
-
-# Can you refactor your solution to remove all repeated code?
 
 
