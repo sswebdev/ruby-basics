@@ -16,3 +16,13 @@
 
 phrase = gets.chomp
 
+if phrase == phrase.upcase
+  year = rand(1930..1950)
+  puts "NO, NOT SINCE #{year}!"
+else
+  puts "HUH?!  SPEAK UP, SONNY!"
+end
+
+
+
+

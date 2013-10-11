@@ -25,11 +25,11 @@
 
 # Your code goes here:
 
-placeholder = 0
-5.times do
-  puts "howdy #{placeholder}"
-  placeholder = placeholder + 1
-end
+# placeholder = 0
+# 5.times do
+#   puts "howdy #{placeholder}"
+#   placeholder = placeholder + 1
+# end
 
 
 
@@ -53,8 +53,14 @@ end
 # this up a bit. It happens often that you use .times and want to know
 # which round you are in, so you can just use this syntax instead:
 
-# 5.times do |this_round|
+# this_round = 0
+# 5.times do
 #   puts "howdy #{this_round}"
+#   this_round = this_round + 2
+# end
+
+# 5.times do |placeholder|
+#   puts "howdy #{placeholder}"
 # end
 
 # It's just a neater way of keeping track of which round we're in. Just as before, you can name the placeholder variable anything you want. The way the .times method works is that if you choose a variable name between the pipes, it will assign to it the round number each time through.
@@ -74,7 +80,9 @@ end
 
 # Your code goes here:
 
-
+# 10.times do |n|
+#   puts n
+# end
 
 
 
@@ -142,10 +150,11 @@ names_hash = { "hoodie" => "Neal", "snuggie" => "Mike", "blackhawks" => "Jeff", 
 
 # Your code goes here:
 
+names = ["Neal", "Mike", "Jeff", "Raghu", "Vince"]
 
-
-
-
+# names.length.times do |position|
+#   puts "*** #{names[position]} ***"
+# end
 
 
 
@@ -170,6 +179,10 @@ names_hash = { "hoodie" => "Neal", "snuggie" => "Mike", "blackhawks" => "Jeff", 
 
 # The Array#each_index method will count the length of the array for you, so you don't have to mess around with Array#length and Fixnum#times.
 
+# names.length.times do |index|
+#   puts "*** #{names[index]} ***"
+# end
+
 # names.each_index do |index|
 #   puts "*** #{names[index]} ***"
 # end
@@ -180,9 +193,9 @@ names_hash = { "hoodie" => "Neal", "snuggie" => "Mike", "blackhawks" => "Jeff", 
 
 # The .each method will count the length of the array for you, AND it will give you back each element without you needing to manually access the array.
 
-# names.each do |name|
-#   puts "*** #{name} ***"
-# end
+names.each do |the_name|
+  puts "*** #{the_name} ***"
+end
 
 # Notice I named the block variable descriptively; before it made sense to call it 'index' because each time through, it was the index that got assigned to it (because that's what .each_index hands back each time through). This time I get the actual object in the cell (because that's what .each hands back each time through), so I called it 'name'.
 

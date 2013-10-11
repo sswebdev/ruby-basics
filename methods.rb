@@ -23,25 +23,37 @@ neal = "Neal is from Chicago"
 mike = "Mike is from Freeport"
 vince = "Vince is from Ann Arbor"
 
-line = "-" * 36
-puts line
-puts "|" + me.center(line.length-2) + "|"
-puts line
+def display_jeff(person)
+  line = "-" * 60
+  puts line
+  puts "|" + person.center(line.length-2) + "|"
+  puts line
+end
 
-line = "-" * 36
-puts line
-puts "|" + neal.center(line.length-2) + "|"
-puts line
+display_jeff("Pickles")
+display_jeff(neal)
+display_jeff(mike)
+display_jeff(vince)
 
-line = "-" * 36
-puts line
-puts "|" + mike.center(line.length-2) + "|"
-puts line
+# line = "-" * 36
+# puts line
+# puts "|" + me.center(line.length-2) + "|"
+# puts line
+
+# line = "-" * 36
+# puts line
+# puts "|" + neal.center(line.length-2) + "|"
+# puts line
+
+# line = "-" * 36
+# puts line
+# puts "|" + mike.center(line.length-2) + "|"
+# puts line
 
 
-line = "-" * 36
-puts line
-puts "|" + vince.center(line.length-2) + "|"
-puts line
+# line = "-" * 36
+# puts line
+# puts "|" + vince.center(line.length-2) + "|"
+# puts line
 
 
