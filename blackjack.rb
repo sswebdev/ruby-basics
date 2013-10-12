@@ -45,7 +45,7 @@
 
 
 
-# 3. Enhance #2 by adding a card if the score is less than 16.
+# 3. Enhance #2 by adding a card if the score is less than 17.
 # Example Output #1:
 # 2 A 6
 # You have 19.
